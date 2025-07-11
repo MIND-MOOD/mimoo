@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "mimoo"
 include(":app")
- 
+include(":core:ui")
+include(":core:util")
+include(":core:domain")
+include(":core:data")
+include(":core:room")

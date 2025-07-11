@@ -7,17 +7,13 @@ plugins {
 }
 
 android {
-    namespace = "com.mindmood.mimoo"
+    namespace = "com.mindmood.mimoo.ui"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.mindmood.mimoo"
         minSdk = 31
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        //        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -29,6 +25,10 @@ android {
             )
         }
     }
+    buildFeatures {
+        viewBinding = true
+        compose = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -36,19 +36,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures {
-        viewBinding = true
-        compose = true
-    }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
     }
 }
 
 dependencies {
-    implementation(project(":core:ui"))
     implementation(project(":core:util"))
-    implementation(project(":core:domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
