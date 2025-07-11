@@ -16,10 +16,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
 rootProject.name = "mimoo"
+
 include(":app")
 include(":core:ui")
 include(":core:util")
