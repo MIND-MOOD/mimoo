@@ -1,5 +1,14 @@
 </br>
 
+## ✳️ branch 설명
+**Feature (필요시 생성)**
+- 하나의 기능 개발을 위한 브랜치
+- `dev` 에서 생성 > 개발 완료 시 `dev` 로 `merge`
+- Merge시, Fast-Forward로 merge하지 않고 Merge Commit을 생성해 merge해야 함. → 히스토리가 특정 기능 단위로 묶이게 됨
+- ✅naming : `feature/{branch-name}`
+
+</br>
+
 # Mimoo : Mind & Mood 감정 일기 앱
 **Mimoo**는 심리적 상태(Mind)와 감정의 흐름(Mood)의 합성어로, 사용자가 매일 자신의 감정을 기록(텍스트 입력, 음성 입력) 하고, AI로 감정 분석 및 피드백을 통해 위로·코칭을 받는 정서관리 앱입니다.
 
